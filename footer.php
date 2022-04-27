@@ -8,6 +8,33 @@
 </head>
 
 <body> <!-- dentro de estas etiquetas va todo el contenido visual con el que el usuario interactua -->
-    
+<footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box-footer">
+                <figure>
+                    <a class="enlace-titulo-empresa" href="#">
+                    <h2 class="tituloEmpresa">Betasof</h2>
+                    </a>
+                </figure>
+            </div>
+            <div class="box-footer">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Betasof creada y desarrolada por el programador web Nicolas Betancur</p>
+                <p>En Compuclon Betasof, además de encontrar toda la tecnología relacionada con el área de los computadores, se encontrará con un equipo humano de gran calidad</p>
+            </div>
+            <div class="box-footer">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 </body>
 </html>

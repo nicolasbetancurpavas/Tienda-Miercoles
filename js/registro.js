@@ -9,7 +9,7 @@ botonregistro.addEventListener("click", function (evento) {
   let password = document.getElementById("contraseña").value;
  
   const auth = getAuth();
-  createUserWithEmailAndPassword(auth, email, password)
+  createUserWithEmailAndPassword(auth, email, password) 
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
@@ -22,5 +22,6 @@ botonregistro.addEventListener("click", function (evento) {
       // ..
       console.log("fallo" +errorMessage)
     });
+
 });
 

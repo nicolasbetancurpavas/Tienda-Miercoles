@@ -77,6 +77,9 @@
                         </div>
                     </div>
                     <div class="modal-footer">
+                        <div class="total-pesos">
+                        <h4 id="totalpesos"></h4>
+                        </div>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <button id="btn-limpiar" type="button" class="btn-limpiar-carrito" data-bs-dismiss="modal">Limpiar carrito</button>
                         <button type="button" id="cerrarbtn" class="btn btn-success">Comprar</button>
@@ -88,7 +91,11 @@
     <?php
     /*incluyo off cavas*/
     include("canvas-armatupc.php");
-    include("canvas-registrarse.php");
+    include("canvas-login.php");
+    ?>
+    
+     <?php
+    include("footer.php");
     ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

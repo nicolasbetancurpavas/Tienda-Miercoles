@@ -8,9 +8,7 @@ let productos = {};
 llenarTienda();
 
 //referencia modal
-let modalinfo = new bootstrap.Modal(
-  document.getElementById("modalinformacion")
-);
+let modalinfo = new bootstrap.Modal(document.getElementById("modalinformacion"));
 let modalComprar = new bootstrap.Modal(document.getElementById("modalcompra"));
 
 //lanzando el modal
@@ -41,6 +39,8 @@ botonAddCard.addEventListener("click", function () {
     suma = suma + Number(producto.cantidad);
   });
 
+  console.log(productos)
+
   //pintar capsula de addcar
   let capsula = document.getElementById("capsula");
   capsula.textContent = suma;
@@ -64,6 +64,7 @@ let btnCompras = document.getElementById("resumencompras");
 
 btnCompras.addEventListener("click", function (e) {
   let baseCarrito = document.getElementById("base-carrito");
+  let totalPesos = document.getElementById("totalpesos")
 
   baseCarrito.innerHTML=""
 
@@ -99,9 +100,19 @@ btnCompras.addEventListener("click", function (e) {
 
     let total = document.createElement("h6");
     total.classList.add("carrito-total");
-    let resultado = Number(productos.cantidad) * Number(productos.precio);
-    total.textContent = resultado;
+    let resultado = Number(productocarrito.cantidad) * Number(productocarrito.precio);
+    total.textContent =resultado; 
 
+     productocarrito.subtotal= resultado  
+     
+    let TotalnetoPesos = 0;
+    carrito.forEach(function (producto) {
+      TotalnetoPesos = TotalnetoPesos + Number(producto.subtotal);
+
+    });
+  
+    totalPesos.textContent= "Total de tus compras: "+ TotalnetoPesos + " Cop"
+  
     divInfo.appendChild(nombre);
     divInfo.appendChild(descripcion);
     divInfo.appendChild(cantidad);
@@ -113,7 +124,6 @@ btnCompras.addEventListener("click", function (e) {
     baseCarrito.appendChild(contenedorProducto);
   });
 
-  console.log(productos);
   e.preventDefault();
   modalComprar.show();
 });

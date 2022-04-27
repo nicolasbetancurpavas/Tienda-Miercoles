@@ -24,8 +24,8 @@
                 </div>
                 <div class="container-nav">
                     <ul class="nav">
-                        <li class="item-nav"><a class="link-item-nav" href="index.php"><i class="bi bi-house"></i>Home</a></li>
-                        <li class="item-nav"><a class="link-item-nav" href=""><i class="bi bi-telephone-outbound"></i>Conctacto</a></li>
+                        <li class="item-nav"><a class="link-item-nav" href="index.php"><i class="bi bi-house"></i> Home</a></li>
+                        <li class="item-nav"><a class="link-item-nav" href=""><i class="bi bi-telephone-outbound"></i> Conctacto</a></li>
                         <li class="item-nav"><a class="link-item-nav" href="chasisproduct.php"><i class="bi bi-pc"></i></i>Chasis pc</a>
                         </li>
                         <li class="armar-pc"> <button id="boton-hardware" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Arma tu Pc</li>
@@ -33,13 +33,13 @@
                 </div>
                 <div class="login-car">
                     <ul class="container-login-car">
-                        <li class="item-login-car"><a id="resumencompras" class="link-login-car"  href="">
+                        <li class="item-login-car"><a id="resumencompras" class="link-login-car" href="">
                                 <i class="bi bi-cart4"></i>
                                 <span id="capsula" class="position-absolute top-5 start-5 translate-middle badge rounded-pill bg-danger invisible">
                                     .
                                 </span></a>
                         </li>
-                        <li class="item-login-car"><a  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="Login" class="link-login-car" href=""><i class="bi bi-person-fill"></i></a></li>
+                        <li class="item-login-car"><a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="Login" class="link-login-car" href=""><i class="bi bi-person-fill"></i></a></li>
                     </ul>
                 </div>
             </div>
