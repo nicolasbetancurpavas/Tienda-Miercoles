@@ -20,78 +20,11 @@
     include("header.php");
     ?>
     <main>
-        <section>
-            <div class="container-main-grid ">
-                <div class="box main-grid-armatupc animate__animated animate__zoomInDown">
-                    <div class="main-grid-letter">
-                        <h5 class="title-small-grid">el pc que quieres</h5>
-                        <h2 class="title-larger-grid">Arma tu pc</h2>
-                        <p class="description-grid">cpu,gpu,almacenamiento,refrigeracion</p>
-                    </div>
-                    <figure class="container-main-img">
-                        <img id="img-armatupc" class="img-grid" src="img/arma-tupc.png" alt="">
-                    </figure>
-                    <figure class="container-main-btn-armatupc">
-                        <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="btn-grid-main-armtupc" type="submit">Armar</button>
-                        <figure>
-                </div>
-                <div class="box main-grid-accesorios animate__animated animate__zoomInDown">
-                    <div class="main-grid-letter">
-                        <h5 class="title-small-grid">los accesorios que necesitas</h5>
-                        <h2 class="title-larger-grid">Accesorios</h2>
-                        <p class="description-grid">todo tipo de accesorios de lujo y clasicos que se ajustan a tus necesidades</p>
-                    </div>
-                    <figure class="container-main-img-accesorios">
-                        <img id="img-accesorios" class="img-grid" src="img/accesorios-gridpng.png" alt="">
-                    </figure>
-                    <figure class="container-main-btn-accesorios">
-                        <button class="btn-grid-main-accesorios" type="submit">comprar</button>
-                        <figure>
-                </div>
-                <div class="box main-grid-silla animate__animated animate__zoomInDown">
-                    <div id="main-grid-letter" class="main-grid-letter">
-                        <h5 id="font-size" class="title-small-grid">lo mejor para tu comodidad</h5>
-                        <h2 id="font-size" class="title-larger-grid">Las mejores sillas a nivel mundial</h2>
-                        <p id="font-size" class="description-grid">te brindamos la mejor comodidad para tu postura y flexibilidad</p>
-                    </div>
-                    <figure class="container-main-img-silla">
-                        <img id="img-silla" class="img-grid" src="img/silla.png" alt="">
-                    </figure>
-                    <figure id="container-main-btn-silla" class="container-main-btn-silla">
-                        <button class="btn-grid-main-silla" type="submit">ver sillas</button>
-                        <figure>
-                </div>
-                <div class="box main-grid-monitores animate__animated animate__zoomInDown">
-                    <div class="main-grid-letter">
-                        <h5 class="title-small-drid">juega a la mejor ghz</h5>
-                        <h2 class="title-larger-grid">Montitores</h2>
-                        <p class="description-grid">aqui encontraras los mejores monitores, que brindan la mejor fluidez y tasa de refresco</p>
-                    </div>
-                    <figure class="container-main-img-monitores">
-                        <img id="img-monitores" class="img-grid" src="img/Monitores1.png" alt="">
-                    </figure>
-                    <figure class="container-main-btn-monitores">
-                        <button class="btn-grid-main-monitores" type="submit"> comprar</button>
-                        <figure>
-                </div>
-                <div class="box main-grid-kits animate__animated animate__zoomInDown">
-                    <div class="main-grid-letter">
-                        <h5 class="title-small-drid">combos</h5>
-                        <h2 class="title-larger-grid">Kits</h2>
-                        <p class="description-grid">Tenemos combos para ti en precios oferta 20 % de descuento</p>
-                    </div>
-                    <figure class="container-main-img-kits">
-                        <img id="img-kits" class="img-kits" src="img/kit.png" alt="">
-                    </figure>
-                    <figure class="container-main-btn-kits">
-                        <button class="btn-grid-main-kits" type="submit">comprar</button>
-                        <figure>
-                </div>
-            </div>
-        </section>
 
         <section class="divisores-perisfericos">
-            <h2 class="tituloperisfericos">Escoje tus aliados</h2>
+            <div>
+                <h2 class="tituloperisfericos">Escoje tus aliados</h2>
+            </div>
             <div class="divisores-menu ">
                 <a class="enlace-perisfericos" href="">
                     <img class="img-main-divisores" src="img/mando.png" alt="">
@@ -120,6 +53,77 @@
                 <a class="enlace-perisfericos" href=""> <img class="img-main-divisores" src="img/audifonos.png" alt="">
                     <h3>auriculares</h3>
                 </a>
+            </div>
+        </section>
+        <section>
+            <div class="container-parent">
+                <div class="container-mainflex">
+                    <div class="box-mainflex-armarpc box-mainflex">
+                        <div class="box-description">
+                            <h5 class="item-description-h5">el pc que quieres</h5>
+                            <h3 class="item-description-h2">Arma tu pc</h3>
+                            <p class="item-description-h5">cpu,gpu,almacenamiento,refrigeracion</p>
+                        </div>
+                        <div class="container-img-flexbox box-armatupc">
+                            <img class="img-flexbox" id="img-flexbox-armatupc" src="img/arma-tupc.png" alt="">
+                        </div>
+                        <div class="container-btn-flexbox">
+                            <button class="btn-flexbox" id="btn-armatupc" type="submit">arma tu pc</button>
+                        </div>
+                    </div>
+                    <div class="box-mainflex-accesorios box-mainflex">
+                        <div class="box-description">
+                            <h5 class="item-description-h5">los accesorios que necesitas</h5>
+                            <h3 class="item-description-h2">Accesorios</h3>
+                            <p class="item-description-h5">todo tipo de accesorios de lujo y clasicos que se ajustan a tus necesidades</p>
+                        </div>
+                        <div class="container-img-flexbox box-accesorios">
+                            <img class="img-flexbox" id="img-flexbox-accesorios" src="img/accesorios-gridpng.png" alt="">
+                        </div>
+                        <div class="container-btn-flexbox">
+                            <button class="btn-flexbox" id="btn-accesorios" type="submit">comprar</button>
+                        </div>
+                    </div>
+                    <div id="box-mainflex-silla" class="box-mainflex-silla box-mainflex">
+                        <div class="box-description">
+                            <h5 class="item-description-h5">lo mejor para tu comodidad</h5>
+                            <h3 class="item-description-h2">Las mejores sillas a nivel mundial</h3>
+                            <p class="item-description-h5">te brindamos la mejor comodidad para tu postura y flexibilidad</p>
+                        </div>
+                        <div class="container-img-flexbox box-silla">
+                            <img class="img-flexbox" id="img-flexbox-silla" src="img/silla.png" alt="">
+                        </div>
+                        <div class="container-btn-flexbox">
+                            <button class="btn-flexbox" id="btn-silla" type="submit" value=>comprar</button>
+                        </div>
+                    </div>
+                    <div class="box-mainflex-monitor box-mainflex">
+                        <div class="box-description">
+                            <h5 class="item-description-h5">juega a la mejor ghz</h5>
+                            <h3 class="item-description-h2">Montitores</h3>
+                            <p class="item-description-h5">aqui encontraras los mejores monitores, que brindan la mejor fluidez y tasa de refresco</p>
+                        </div>
+                        <div class="container-img-flexbox box-monitores">
+                            <img class="img-flexbox" id="img-flexbox-monitores" src="img/Monitores1.png" alt="">
+                        </div>
+                        <div class="container-btn-flexbox">
+                            <button class="btn-flexbox" id="btn-monitores" type="submit">comprar</button>
+                        </div>
+                    </div>
+                    <div class="box-mainflex-kits box-mainflex">
+                        <div class="box-description">
+                            <h5 class="item-description-h5">combos</h5>
+                            <h3 class="item-description-h2">Kits</h3>
+                            <p class="item-description-h5">Tenemos combos para ti en precios oferta 20 % de descuento</p>
+                        </div>
+                        <div class="container-img-flexbox box-kits">
+                            <img class="img-flexbox " id="img-flexbox-kit" src="img/kit.png" alt="">
+                        </div>
+                        <div class="container-btn-flexbox">
+                            <button class="btn-flexbox" id="btn-kits" type="submit">comprar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
@@ -186,4 +190,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
+
 </html>

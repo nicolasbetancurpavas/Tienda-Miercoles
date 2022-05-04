@@ -13,13 +13,13 @@
             <div class="box-footer">
                 <figure>
                     <a class="enlace-titulo-empresa" href="#">
-                    <h2 class="tituloEmpresa">Betasof</h2>
+
                     </a>
                 </figure>
             </div>
             <div class="box-footer">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Betasof creada y desarrolada por el programador web Nicolas Betancur</p>
+                <p class="asdas">Betasof creada y desarrolada por el programador web Nicolas Betancur</p>
                 <p>En Compuclon Betasof, además de encontrar toda la tecnología relacionada con el área de los computadores, se encontrará con un equipo humano de gran calidad</p>
             </div>
             <div class="box-footer">
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2021 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+            <small>&copy; 2022 <b>Nicolas betancur</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
 </body>

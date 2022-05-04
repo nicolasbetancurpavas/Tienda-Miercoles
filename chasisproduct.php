@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body id="body-chasis">
     <?php
     include("header.php");
     ?>
-    <div class="container-chasis animate__animated animate__backInDown row row-cols-1 row-cols-md-5 g-4" id="fila">
+    <div class="container-chasis animate__animated  row row-cols-1 row-cols-md-5 g-4" id="fila">
     </div>
     </main>
     <section>
@@ -25,16 +26,6 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="container-modal-chasis">
-                                <!-- navegacionb 
-                                <div class="header-information">
-                                    <nav class="nav-modal">
-                                        <ul class="nav-modal-items">
-                                            <li class="item"><a class="enlace-nav-modal" href="index.php"><i class="bi bi-house"></i>Inicio</a></li>
-                                            <li class="item"><a class="enlace-nav-modal" href="chasisproduct.php"><i class="bi bi-pc"></i>ver chasis</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                -->
                                 <img src="" alt="" id="img-modal-chasis">
                             </div>
                             <h3 id="nombre-chasis"></h3>
@@ -53,13 +44,15 @@
                         </div>
                         <div class="botones-carrito">
                             <label class="form-label">Cantidad</label>
-                            <input type="number" value="1" min="1" max="200" class="form-control" id="cantidadProducto">
+                            <input type="number" value="1" step="1" min="1" max="200" class="form-control" id="cantidadProducto">
                             <button id="btn-addcar" type="button" class="btn-agregar-carrito">Agregar al carrito</button>
                             <button type="button" id="cerrarbtnn" class="btn btn-success">Comprar</button>
                         </div>
                     </div>
+                    <div class="btn-cerrar-modal-resume">
                     <div id="modal-footer">
                         <button type="button" class="btn-cerrar-info" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -78,10 +71,11 @@
                     </div>
                     <div class="modal-footer">
                         <div class="total-pesos">
-                        <h4 id="totalpesos"></h4>
+                            <h4 id="totalpesos"></h4>
                         </div>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <button id="btn-limpiar" type="button" class="btn-limpiar-carrito" data-bs-dismiss="modal">Limpiar carrito</button>
+                        <button type="submit" id="btn-usd">convert USD</button>
                         <button type="button" id="cerrarbtn" class="btn btn-success">Comprar</button>
                     </div>
                 </div>
@@ -93,12 +87,13 @@
     include("canvas-armatupc.php");
     include("canvas-login.php");
     ?>
-    
-     <?php
+
+    <?php
     include("footer.php");
     ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="js/controller.js" type="module"></script>
 <script src="js/fillStore.js"></script>
+
 </html>

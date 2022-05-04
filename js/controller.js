@@ -57,6 +57,7 @@ botonLimpiar.addEventListener("click", function () {
   carrito = [];
   let capsula = document.getElementById("capsula");
   capsula.classList.add("invisible");
+
 });
 
 //modal lanzar resumen carrito
@@ -103,16 +104,28 @@ btnCompras.addEventListener("click", function (e) {
     let resultado = Number(productocarrito.cantidad) * Number(productocarrito.precio);
     total.textContent =resultado; 
 
-     productocarrito.subtotal= resultado  
-     
+
+    //creo un atributo al objecto producto
+     productocarrito.subtotal= resultado 
+
+     //recorro el subtotal de los productos para poder dar resultado total
+
     let TotalnetoPesos = 0;
     carrito.forEach(function (producto) {
       TotalnetoPesos = TotalnetoPesos + Number(producto.subtotal);
-
     });
   
     totalPesos.textContent= "Total de tus compras: "+ TotalnetoPesos + " Cop"
-  
+
+    // cambio de pesos colombianos a dolares
+
+    let btnusd = document.getElementById("btn-usd")
+
+    btnusd.addEventListener ("click", function (){
+      let usd = 1 * TotalnetoPesos / 4000 
+      totalPesos.textContent= "Total de tus compras: "+ usd + "usd"
+    })
+
     divInfo.appendChild(nombre);
     divInfo.appendChild(descripcion);
     divInfo.appendChild(cantidad);
@@ -127,3 +140,5 @@ btnCompras.addEventListener("click", function (e) {
   e.preventDefault();
   modalComprar.show();
 });
+
+

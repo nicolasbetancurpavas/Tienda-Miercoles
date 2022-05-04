@@ -19,15 +19,20 @@
         <nav class="navagation">
             <div class="container-header">
                 <div class="header">
-                    <img class="item-img" src="img/logo.png" alt="">
                     <h2 class="tituloEmpresa ">Betasof</h2>
                 </div>
                 <div class="container-nav">
                     <ul class="nav">
-                        <li class="item-nav"><a class="link-item-nav" href="index.php"><i class="bi bi-house"></i> Home</a></li>
-                        <li class="item-nav"><a class="link-item-nav" href=""><i class="bi bi-telephone-outbound"></i> Conctacto</a></li>
-                        <li class="item-nav"><a class="link-item-nav" href="chasisproduct.php"><i class="bi bi-pc"></i></i>Chasis pc</a>
-                        </li>
+                        <a class="link-item-nav" href="index.php">
+                            <li class="item-nav"><i class="bi bi-house"></i> Home</li>
+                        </a>
+                        <a class="link-item-nav" href="">
+                            <li class="item-nav"><i class="bi bi-telephone-outbound"></i> Conctacto</li>
+                        </a>
+                        <a class="link-item-nav" href="chasisproduct.php">
+                            <li class="item-nav"><i class="bi bi-pc"></i>Chasis pc</li>
+                        </a>
+
                         <li class="armar-pc"> <button id="boton-hardware" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Arma tu Pc</li>
                         <li class="armar-pc">
                 </div>
@@ -46,5 +51,4 @@
         </nav>
     </header>
 </body>
-
 </html>

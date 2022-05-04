@@ -19,5 +19,6 @@ export function ampliarInformacionProducto(evento) {
 
     return productos
 
-}
+    console.log(productos)
 
+}
